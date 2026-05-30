@@ -1,0 +1,173 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/titulo_nuevo_viaje"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- ==================== FOTO DE PORTADA ==================== -->
+        <TextView
+            android:text="Foto de portada (opcional)"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgPortadaPreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#E0E0E0"
+            android:src="@drawable/travel"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnSeleccionarFoto"
+            android:text="📷 Seleccionar foto de portada"
+            android:backgroundTint="#1A237E"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- ==================== RESTO DEL FORMULARIO ==================== -->
+        <TextView
+            android:text="@string/label_titulo"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:hint="@string/hint_titulo_viaje"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/label_destino"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp">
+
+            <EditText
+                android:id="@+id/etDestino"
+                android:hint="@string/hint_destino"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnBuscarLugar"
+                android:text="🔍"
+                android:backgroundTint="#1A237E"
+                android:textColor="#FFFFFF"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/label_descripcion"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:hint="@string/hint_descripcion"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/label_fecha_inicio"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etFechaInicio"
+            android:hint="@string/selecciona_fecha"
+            android:focusable="false"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/label_fecha_fin"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etFechaFin"
+            android:hint="@string/selecciona_fecha"
+            android:focusable="false"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/label_estado"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spinnerEstado"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="@string/btn_guardar_viaje"
+            android:backgroundTint="#1A237E"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

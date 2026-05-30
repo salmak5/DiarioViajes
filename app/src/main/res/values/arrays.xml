@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="estados_viaje">
+        <item>Planificado</item>
+        <item>En curso</item>
+        <item>Finalizado</item>
+    </string-array>
+</resources>

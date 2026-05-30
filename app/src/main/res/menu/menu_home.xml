@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuEstadisticas"
+        android:title="📊 Estadísticas"/>
+
+    <item
+        android:id="@+id/menuPerfil"
+        android:title="Mi perfil"/>
+
+    <item
+        android:id="@+id/menuCerrarSesion"
+        android:title="Cerrar sesión"/>
+
+</menu>

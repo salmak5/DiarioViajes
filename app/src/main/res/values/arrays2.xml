@@ -1,0 +1,9 @@
+<resources>
+<string-array name="categorias_gasto">
+    <item>✈️ Vuelo</item>
+    <item>🏨 Hotel</item>
+    <item>🍽️ Comida</item>
+    <item>🎭 Actividades</item>
+    <item>🛍️ Otros</item>
+</string-array>
+</resources>

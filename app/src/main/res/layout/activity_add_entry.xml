@@ -1,0 +1,122 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4FF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Nombre del viaje -->
+        <TextView
+            android:id="@+id/tvNombreViaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viaje: Cargando..."
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:background="#F0F4FF"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:text="@string/titulo_nueva_entrada"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Título -->
+        <TextView
+            android:text="@string/label_titulo"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etTitulo"
+            android:hint="@string/hint_titulo_entrada"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Descripción -->
+        <TextView
+            android:text="@string/label_descripcion"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:hint="@string/hint_descripcion_entrada"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:minLines="4"
+            android:gravity="top"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Fecha -->
+        <TextView
+            android:text="@string/label_fecha"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etFecha"
+            android:hint="@string/selecciona_fecha"
+            android:focusable="false"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Foto -->
+        <TextView
+            android:text="@string/label_foto"
+            android:textColor="#5C6680"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imgFoto"
+            android:background="#FFFFFF"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:contentDescription="Foto seleccionada" />
+
+        <Button
+            android:id="@+id/btnSeleccionarFoto"
+            android:text="@string/btn_seleccionar_foto"
+            android:backgroundTint="#5C6680"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:text="@string/btn_guardar_entrada"
+            android:backgroundTint="#1A237E"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

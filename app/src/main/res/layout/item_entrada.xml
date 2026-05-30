@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:layout_margin="6dp"
+    android:elevation="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Imagen de la entrada -->
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="Foto de la entrada"
+        android:background="#EEEEEE"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloEntrada"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Fecha -->
+    <TextView
+        android:id="@+id/tvFechaEntrada"
+        android:textSize="12sp"
+        android:textColor="#5C6680"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Botones -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnModificarEntrada"
+            android:text="@string/btn_modificar"
+            android:backgroundTint="#1A237E"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnEliminarEntrada"
+            android:text="@string/btn_eliminar"
+            android:backgroundTint="#B71C1C"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
