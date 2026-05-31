@@ -54,6 +54,11 @@ public class AddEntryActivity extends AppCompatActivity {
         btnGuardar = findViewById(R.id.btnGuardar);
         btnFoto = findViewById(R.id.btnSeleccionarFoto);
         tvViaje = findViewById(R.id.tvNombreViaje);
+        Button btnVolver = findViewById(R.id.btnVolver);
+
+        btnVolver.setOnClickListener(v -> {
+            finish(); // vuelve a la pantalla anterior
+        });
 
         // Configura el selector de imagenes.
         inicializarLauncher();

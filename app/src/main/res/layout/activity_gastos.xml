@@ -13,6 +13,14 @@
         android:layout_marginBottom="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Volver"
+        android:backgroundTint="#5C6680"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
 
     <TextView
         android:id="@+id/tvTotalGastos"

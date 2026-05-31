@@ -2,11 +2,8 @@
 
     <item
         android:id="@+id/menuEstadisticas"
-        android:title="📊 Estadísticas"/>
+        android:title="Estadísticas"/>
 
-    <item
-        android:id="@+id/menuPerfil"
-        android:title="Mi perfil"/>
 
     <item
         android:id="@+id/menuCerrarSesion"

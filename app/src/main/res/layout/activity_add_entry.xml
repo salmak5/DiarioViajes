@@ -9,12 +9,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Nombre del viaje -->
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:backgroundTint="#5C6680"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
         <TextView
             android:id="@+id/tvNombreViaje"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Viaje: Cargando..."
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/black"

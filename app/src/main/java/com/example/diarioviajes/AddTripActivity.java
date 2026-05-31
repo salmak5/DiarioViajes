@@ -71,7 +71,7 @@ public class AddTripActivity extends AppCompatActivity {
 
         // Inicializa Google Places si no esta activo.
         if (!Places.isInitialized()) {
-            Places.initialize(getApplicationContext(), "TU_API_KEY");
+            Places.initialize(getApplicationContext(), "API_KEY");
         }
 
         // Obtiene el id del usuario.

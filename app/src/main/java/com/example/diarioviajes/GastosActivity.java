@@ -40,6 +40,11 @@ public class GastosActivity extends AppCompatActivity {
 
         // Conecta esta clase con el layout XML
         setContentView(R.layout.activity_gastos);
+        Button btnVolver = findViewById(R.id.btnVolver);
+
+        btnVolver.setOnClickListener(v -> {
+            finish(); // vuelve a la pantalla anterior
+        });
 
         // Obtiene el ID del viaje enviado por intent
         viajeId = getIntent().getIntExtra(

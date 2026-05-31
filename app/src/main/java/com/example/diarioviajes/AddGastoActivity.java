@@ -38,6 +38,11 @@ public class AddGastoActivity extends AppCompatActivity {
         spinnerCategoria = findViewById(R.id.spinnerCategoria);
         tvViaje = findViewById(R.id.tvNombreViaje);
         btnGuardar = findViewById(R.id.btnGuardar);
+        Button btnVolver = findViewById(R.id.btnVolver);
+
+        btnVolver.setOnClickListener(v -> {
+            finish(); // vuelve a la pantalla anterior
+        });
 
         // Cargar datos
         cargarSpinnerCategoria();
